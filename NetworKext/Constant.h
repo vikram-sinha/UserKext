@@ -1,10 +1,6 @@
 //
 //  Constant.h
 //  NetworKext
-//
-//  Created by AMRA on 28/08/18.
-//  Copyright © 2018 innovanathinklabs. All rights reserved.
-//
 
 #ifndef Constant_h
 #define Constant_h
