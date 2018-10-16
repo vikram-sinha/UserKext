@@ -3,7 +3,7 @@
 //  NetworKext
 //
 //  Created by AMRA on 28/08/18.
-//  Copyright © 2018 innovanathinklabs. All rights reserved.
+//  Copyright © 2018 in. All rights reserved.
 //
 
 #include "IPFilter.h"
@@ -159,7 +159,7 @@ static void myipfilter_detach(void* cookie) {
 
 static struct ipf_filter g_my_ip_filter = {
     &g_filter_stats,
-    "com.innovanathinklabs.NetworKext",
+    "com.in.NetworKext",
     myipfilter_input,
     myipfilter_output, //myipfilter_output_redirect,
     myipfilter_detach

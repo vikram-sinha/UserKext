@@ -3,7 +3,7 @@
 //  NetworKext
 //
 //  Created by AMRA on 20/09/18.
-//  Copyright © 2018 innovanathinklabs. All rights reserved.
+//  Copyright © 2018 in. All rights reserved.
 //
 
 #include "InterfaceFilter.h"
@@ -69,7 +69,7 @@ static void myif_filter_detached(void* cookie, ifnet_t interface)
 static struct iff_filter g_my_iff_filter =
 {
     NULL,
-    "com.innovanathinklabs.NetworKext",
+    "com.in.NetworKext",
     0,
     myif_filter_input,
     myif_filter_output,

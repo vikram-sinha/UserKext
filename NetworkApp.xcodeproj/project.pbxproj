@@ -282,7 +282,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NetworkApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.innovanathinklabs.NetworkApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.in.NetworkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -295,7 +295,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NetworkApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.innovanathinklabs.NetworkApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.in.NetworkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

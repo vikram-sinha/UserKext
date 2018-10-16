@@ -3,7 +3,7 @@
 //  NetworkApp
 //
 //  Created by AMRA on 29/08/18.
-//  Copyright © 2018 innovanathinklabs. All rights reserved.
+//  Copyright © 2018 in. All rights reserved.
 //
 
 #import "AppDelegate.h"

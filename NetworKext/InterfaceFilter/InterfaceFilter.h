@@ -3,7 +3,7 @@
 //  NetworKext
 //
 //  Created by AMRA on 20/09/18.
-//  Copyright © 2018 innovanathinklabs. All rights reserved.
+//  Copyright © 2018 in. All rights reserved.
 //
 
 #ifndef InterfaceFilter_h

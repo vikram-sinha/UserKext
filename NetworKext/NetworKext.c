@@ -3,7 +3,7 @@
 //  NetworKext
 //
 //  Created by AMRA on 17/08/18.
-//  Copyright © 2018 innovanathinklabs. All rights reserved.
+//  Copyright © 2018 in. All rights reserved.
 //
 
 #include "Constant.h"
@@ -15,7 +15,7 @@
 
 
 
-#define BUNDLE_ID "com.innovanathinklabs.NetworKext"
+#define BUNDLE_ID "com.in.NetworKext"
 #define HELLO_CONTROL_GET_STRING  1
 #define HELLO_CONTROL_SET_STRING  2
 #define DEFAULT_STRING            "Hello World Vikram"
@@ -141,7 +141,7 @@ kern_return_t NetworKext_stop (kmod_info_t * ki, void * d)
     if (gCtlRef) {
         errno_t res = ctl_deregister(gCtlRef);
         if (res) { // see http://lists.apple.com/archives/darwin-kernel/2005/Jul/msg00035.html
-            printf("com.innovanathinklabs.NetworKext: cannot unload kext, the client is still connected (%d)\n", res);
+            printf("com.in.NetworKext: cannot unload kext, the client is still connected (%d)\n", res);
             return KERN_FAILURE; // prevent unloading when client is still connected
         }
         gCtlRef = NULL;
