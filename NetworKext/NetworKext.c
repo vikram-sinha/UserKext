@@ -71,9 +71,7 @@ static int hello_ctl_set(kern_ctl_ref ctl_ref, u_int32_t unit, void* unitinfo, i
             char g_string_buf[] = DEFAULT_STRING;
             len = min(MAX_STRING_LEN, len);
             printf("len: %zu", len);
-            size_t *lenA = &len;
-            strncpy(data, g_string_buf, *lenA);
-            strncat(g_string_buf, data, len);
+            strncpy(data, g_string_buf, len);
             printf("hello_ctl_set called for the condition HELLO_CONTROL_SET_STRING: %s", g_string_buf);
             // no implementation
         }break;
