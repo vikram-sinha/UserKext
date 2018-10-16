@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainVc">
+            <connections>
+                <outlet property="lblKextEvent" destination="N59-8e-1FG" id="jTC-Fb-2NV"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="369"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="xfB-Qg-CWq">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="369"/>
+                    <view key="contentView" id="dSK-qS-e6Q">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="369"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8m0-mU-5Y9">
+                                <rect key="frame" x="132" y="318" width="217" height="31"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="User App for Kext" id="3g9-hV-qIp">
+                                    <font key="font" metaFont="systemBold" size="26"/>
+                                    <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N59-8e-1FG">
+                                <rect key="frame" x="18" y="20" width="444" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="Vw7-6J-ZL3"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="waiting to receive event from kext..." id="5PY-GJ-2ch">
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="N59-8e-1FG" firstAttribute="centerX" secondItem="dSK-qS-e6Q" secondAttribute="centerX" id="Ezi-sV-DPa"/>
+                            <constraint firstItem="N59-8e-1FG" firstAttribute="leading" secondItem="dSK-qS-e6Q" secondAttribute="leading" constant="20" id="MDx-AT-6dh"/>
+                            <constraint firstAttribute="trailing" secondItem="N59-8e-1FG" secondAttribute="trailing" constant="20" id="Vv4-UX-5N3"/>
+                            <constraint firstItem="8m0-mU-5Y9" firstAttribute="centerX" secondItem="dSK-qS-e6Q" secondAttribute="centerX" id="hQR-6Q-sH8"/>
+                            <constraint firstItem="8m0-mU-5Y9" firstAttribute="top" secondItem="dSK-qS-e6Q" secondAttribute="top" constant="20" id="jfi-2S-1fe"/>
+                            <constraint firstAttribute="bottom" secondItem="N59-8e-1FG" secondAttribute="bottom" constant="20" id="kbI-Po-WR6"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xfB-Qg-CWq" secondAttribute="bottom" id="CPP-gt-Sn3"/>
+                <constraint firstAttribute="trailing" secondItem="xfB-Qg-CWq" secondAttribute="trailing" id="CmJ-8v-uxg"/>
+                <constraint firstItem="xfB-Qg-CWq" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="ec9-iq-rbv"/>
+                <constraint firstItem="xfB-Qg-CWq" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="kJR-q9-5G2"/>
+            </constraints>
+            <point key="canvasLocation" x="135" y="3.5"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C50EBF1121367EF2009DC31A /* Constant.h in Headers */ = {isa = PBXBuildFile; fileRef = C52D93FA2135836C0061C948 /* Constant.h */; };
+		C50EBF1221367F01009DC31A /* IPCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C5805CFE2136619D00DFA14C /* IPCHelper.h */; };
+		C50EBF1321367F03009DC31A /* SocketFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C52D93F1213582C30061C948 /* SocketFilter.h */; };
+		C50EBF1421367F05009DC31A /* IPFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C52D93F6213582ED0061C948 /* IPFilter.h */; };
+		C52D93F2213582C30061C948 /* SocketFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = C52D93F0213582C30061C948 /* SocketFilter.c */; };
+		C52D93F7213582ED0061C948 /* IPFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = C52D93F5213582ED0061C948 /* IPFilter.c */; };
+		C5805CFF2136619D00DFA14C /* IPCHelper.c in Sources */ = {isa = PBXBuildFile; fileRef = C5805CFD2136619D00DFA14C /* IPCHelper.c */; };
+		C5C1CD2A2153D954006E8268 /* InterfaceFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = C5C1CD282153D954006E8268 /* InterfaceFilter.c */; };
+		C5C1CD2B2153D954006E8268 /* InterfaceFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C1CD292153D954006E8268 /* InterfaceFilter.h */; };
+		C5CEF6A4212705320031F2E0 /* NetworKext.c in Sources */ = {isa = PBXBuildFile; fileRef = C5CEF6A3212705320031F2E0 /* NetworKext.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C52D93F0213582C30061C948 /* SocketFilter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SocketFilter.c; sourceTree = "<group>"; };
+		C52D93F1213582C30061C948 /* SocketFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketFilter.h; sourceTree = "<group>"; };
+		C52D93F5213582ED0061C948 /* IPFilter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IPFilter.c; sourceTree = "<group>"; };
+		C52D93F6213582ED0061C948 /* IPFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPFilter.h; sourceTree = "<group>"; };
+		C52D93FA2135836C0061C948 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		C5805CFD2136619D00DFA14C /* IPCHelper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IPCHelper.c; sourceTree = "<group>"; };
+		C5805CFE2136619D00DFA14C /* IPCHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPCHelper.h; sourceTree = "<group>"; };
+		C5C1CD282153D954006E8268 /* InterfaceFilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = InterfaceFilter.c; sourceTree = "<group>"; };
+		C5C1CD292153D954006E8268 /* InterfaceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceFilter.h; sourceTree = "<group>"; };
+		C5CEF6A0212705320031F2E0 /* NetworKext.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworKext.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CEF6A3212705320031F2E0 /* NetworKext.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = NetworKext.c; sourceTree = "<group>"; };
+		C5CEF6A5212705320031F2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5CEF69C212705320031F2E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C52D93F4213582C90061C948 /* SocketFilter */ = {
+			isa = PBXGroup;
+			children = (
+				C52D93F1213582C30061C948 /* SocketFilter.h */,
+				C52D93F0213582C30061C948 /* SocketFilter.c */,
+			);
+			path = SocketFilter;
+			sourceTree = "<group>";
+		};
+		C52D93F9213582F00061C948 /* IPFilter */ = {
+			isa = PBXGroup;
+			children = (
+				C52D93F6213582ED0061C948 /* IPFilter.h */,
+				C52D93F5213582ED0061C948 /* IPFilter.c */,
+			);
+			path = IPFilter;
+			sourceTree = "<group>";
+		};
+		C5805CFC2136615800DFA14C /* IPC */ = {
+			isa = PBXGroup;
+			children = (
+				C5805CFE2136619D00DFA14C /* IPCHelper.h */,
+				C5805CFD2136619D00DFA14C /* IPCHelper.c */,
+			);
+			path = IPC;
+			sourceTree = "<group>";
+		};
+		C5C4067A21538876007D8013 /* InterfaceFilter */ = {
+			isa = PBXGroup;
+			children = (
+				C5C1CD292153D954006E8268 /* InterfaceFilter.h */,
+				C5C1CD282153D954006E8268 /* InterfaceFilter.c */,
+			);
+			path = InterfaceFilter;
+			sourceTree = "<group>";
+		};
+		C5CEF696212705320031F2E0 = {
+			isa = PBXGroup;
+			children = (
+				C5CEF6A2212705320031F2E0 /* NetworKext */,
+				C5CEF6A1212705320031F2E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5CEF6A1212705320031F2E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5CEF6A0212705320031F2E0 /* NetworKext.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5CEF6A2212705320031F2E0 /* NetworKext */ = {
+			isa = PBXGroup;
+			children = (
+				C52D93FA2135836C0061C948 /* Constant.h */,
+				C5CEF6A3212705320031F2E0 /* NetworKext.c */,
+				C5805CFC2136615800DFA14C /* IPC */,
+				C52D93F4213582C90061C948 /* SocketFilter */,
+				C52D93F9213582F00061C948 /* IPFilter */,
+				C5C4067A21538876007D8013 /* InterfaceFilter */,
+				C5CEF6A5212705320031F2E0 /* Info.plist */,
+			);
+			path = NetworKext;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C5CEF69D212705320031F2E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50EBF1121367EF2009DC31A /* Constant.h in Headers */,
+				C5C1CD2B2153D954006E8268 /* InterfaceFilter.h in Headers */,
+				C50EBF1321367F03009DC31A /* SocketFilter.h in Headers */,
+				C50EBF1221367F01009DC31A /* IPCHelper.h in Headers */,
+				C50EBF1421367F05009DC31A /* IPFilter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C5CEF69F212705320031F2E0 /* NetworKext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5CEF6A8212705320031F2E0 /* Build configuration list for PBXNativeTarget "NetworKext" */;
+			buildPhases = (
+				C5CEF69B212705320031F2E0 /* Sources */,
+				C5CEF69C212705320031F2E0 /* Frameworks */,
+				C5CEF69D212705320031F2E0 /* Headers */,
+				C5CEF69E212705320031F2E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworKext;
+			productName = NetworKext;
+			productReference = C5CEF6A0212705320031F2E0 /* NetworKext.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5CEF697212705320031F2E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = innovanathinklabs;
+				TargetAttributes = {
+					C5CEF69F212705320031F2E0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = C5CEF69A212705320031F2E0 /* Build configuration list for PBXProject "NetworKext" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5CEF696212705320031F2E0;
+			productRefGroup = C5CEF6A1212705320031F2E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5CEF69F212705320031F2E0 /* NetworKext */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5CEF69E212705320031F2E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5CEF69B212705320031F2E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5805CFF2136619D00DFA14C /* IPCHelper.c in Sources */,
+				C5C1CD2A2153D954006E8268 /* InterfaceFilter.c in Sources */,
+				C52D93F2213582C30061C948 /* SocketFilter.c in Sources */,
+				C5CEF6A4212705320031F2E0 /* NetworKext.c in Sources */,
+				C52D93F7213582ED0061C948 /* IPFilter.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C5CEF6A6212705320031F2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C5CEF6A7212705320031F2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C5CEF6A9212705320031F2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NetworKext/Info.plist;
+				MODULE_NAME = com.innovanathinklabs.NetworKext;
+				MODULE_START = NetworKext_start;
+				MODULE_STOP = NetworKext_stop;
+				MODULE_VERSION = 1.0.0d1;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovanathinklabs.NetworKext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		C5CEF6AA212705320031F2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NetworKext/Info.plist;
+				MODULE_NAME = com.innovanathinklabs.NetworKext;
+				MODULE_START = NetworKext_start;
+				MODULE_STOP = NetworKext_stop;
+				MODULE_VERSION = 1.0.0d1;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovanathinklabs.NetworKext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5CEF69A212705320031F2E0 /* Build configuration list for PBXProject "NetworKext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5CEF6A6212705320031F2E0 /* Debug */,
+				C5CEF6A7212705320031F2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5CEF6A8212705320031F2E0 /* Build configuration list for PBXNativeTarget "NetworKext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5CEF6A9212705320031F2E0 /* Debug */,
+				C5CEF6AA212705320031F2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5CEF697212705320031F2E0 /* Project object */;
+}
